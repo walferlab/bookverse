@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <nav className="sticky top-0 z-50 bg-black border-b border-white/10">
@@ -14,7 +16,7 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-8 font-semibold">
           {["Home", "Books", "Author", "Contact"].map(item => (
             <li key={item}>
-              <a  onClick={()=>(navigate(`/${item.toLowerCase()}`))} className="text-white hover:text-gray-400 cursor-pointer font-author">{item}</a>
+              <a onClick={()=>(navigate(`/${item.toLowerCase()}`))} className="text-white hover:text-gray-400 cursor-pointer font-author">{item}</a>
             </li>
           ))}
         </ul>
