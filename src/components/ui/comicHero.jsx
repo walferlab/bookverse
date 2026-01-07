@@ -18,7 +18,7 @@ export default function ComicHero() {
             NEW MYSTERY DROPS!
           </div>
 
-          <h1 className="text-5xl sm:text-6xl font-bangers leading-tight">
+          <h1 className="text-4xl sm:text-6xl font-bangers leading-tight">
             SHORT COMICS.
             <br />
             DEEP MYSTERIES.
@@ -26,7 +26,7 @@ export default function ComicHero() {
             <span className="text-gray-100">ENDLESS IDEAS.</span>
           </h1>
 
-          <div className="bg-white/50 border-4 border-black text-gray-800 rounded-xl p-4 shadow-[6px_6px_0_#000] font-display text-lg">
+          <div className="bg-white/50 border-4 border-black text-gray-800 rounded-xl p-4 shadow-[6px_6px_0_#000] font-display text-md sm:text-lg">
             Dive into short, handcrafted comic stories built around mystery,
             curiosity, and imagination. New chapters, fresh ideas, and
             experimental storytelling—updated regularly.
@@ -44,7 +44,7 @@ export default function ComicHero() {
                   navigate(`/search?q=${encodeURIComponent(search)}`);
                 }
               }}
-              className="w-full px-5 py-4 pl-12 rounded-xl border-4 border-black font-display
+              className="w-full px-5 py-3 pl-12 rounded-xl border-4 border-black font-display
              shadow-[4px_4px_0_#000] bg-amber-50 outline-none"
             />
 
@@ -56,12 +56,12 @@ export default function ComicHero() {
 
         {/* Right: Comic Banner Card */}
         <div className="flex justify-center">
-          <div className="relative w-70 sm:w-[320px] bg-yellow-300 border-4 border-black rounded-2xl shadow-[8px_8px_0_#000] rotate-3">
-            <div className="absolute -top-5 -right-5 bg-black text-white px-3 py-1 text-xs font-bangers rotate-12">
+          <div className="relative w-80 sm:w-85 bg-yellow-300 border-4 border-black rounded-2xl shadow-[8px_8px_0_#000] rotate-3">
+            <div className="absolute -top-2 -right-4 bg-black text-white px-3 py-1 text-xs font-bangers rotate-20">
               BOOM!
             </div>
 
-            <div className="p-6 space-y-4">
+            <div className="p-6 space-y-2 sm:space-y-4">
               <h2 className="font-bangers text-2xl">THE COMIC ARCHIVE</h2>
 
               <p className="font-author text-sm">
