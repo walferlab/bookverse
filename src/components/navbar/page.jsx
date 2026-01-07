@@ -14,7 +14,7 @@ export default function Navbar() {
         <ul className="hidden md:flex gap-8 font-semibold">
           {["Home", "Books", "Author", "Contact"].map(item => (
             <li key={item}>
-              <a href={`/${item.toLowerCase()}`} className="text-white hover:text-gray-400 cursor-pointer font-author">{item}</a>
+              <a href={`/${item}`} className="text-white hover:text-gray-400 cursor-pointer font-author">{item}</a>
             </li>
           ))}
         </ul>
