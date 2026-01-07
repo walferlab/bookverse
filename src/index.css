@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Sentient", sans-serif; 
+  --font-author: "Author", sans-serif; 
+  --font-bangers: "Bangers", sans-serif; 
+}
+
+body {
+  background: #e6e4d5;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
